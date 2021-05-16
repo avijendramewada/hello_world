@@ -1,0 +1,11 @@
+ const fs = require("fs")
+//  fs.writeFileSync("read.txt" , "welcome to nodejs app user")
+// const buf_data =fs.readFileSync("read.txt")
+// console.log(buf_data)
+// console.log(buf_data.toString())
+// fs.renameSync("read.txt","readwrite")
+// fs.writeFileSync("bio.txt","hello");
+// fs.appendFileSync("bio.txt","user")
+const data = fs.readFileSync("bio.txt","utf-8")
+console.log(data)
+fs.unlinkSync("bio.txt")
